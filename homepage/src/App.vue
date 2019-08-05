@@ -10,7 +10,7 @@
         />
         <Poster
                 :background="`https://sf1-hscdn-tos.pstatp.com/obj/ies.fe.effect/8617e358233d4d11a735d8083daffab9`"
-                title="ネオン テープ"
+                title="ネオー テープ"
                 link="#"
                 theme="light"
                 mode="bottom"
