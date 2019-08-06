@@ -1,85 +1,88 @@
 <template>
-  <header id="head" :class="open ? `open` : ``">
-    <div class="common">
-      <span class="ly-flex">
-        <div class="side">
-          <img src="../assets/copyright.svg" alt="C" />
+  <div>
+    <header id="head" :class="open ? `open` : ``">
+      <div class="common">
+        <span class="ly-flex">
+          <div class="side">
+            <img src="../assets/copyright.svg" alt="C" />
+          </div>
+          <div class="main">
+            <a href="http://neotape.live/">NEOTAPE.LIVE</a>
+          </div>
+        </span>
+      </div>
+      <div class="toggle js-toggle">
+        <div class="top">
+          <div class="side">
+            <img
+              src="../assets/name.png"
+              width="30"
+              alt="Copyright. NEOTAPE.LIVE INC. All Rights Reserved."
+            />
+          </div>
+          <div class="main">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    class="fade-nav fade-delay01"
+                    :class="open ? `fade-in` : ''"
+                    href="#"
+                    >时间表</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="fade-nav fade-delay02"
+                    :class="open ? `fade-in` : ''"
+                    href="#"
+                    >成员</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="fade-nav fade-delay03"
+                    :class="open ? `fade-in` : ''"
+                    href="#"
+                    >合作</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="main">
-          <a href="http://neotape.live/">NEOTAPE.LIVE</a>
-        </div>
-      </span>
-    </div>
-    <div class="toggle js-toggle">
-      <div class="top">
-        <div class="side">
-          <img
-            src="../assets/name.png"
-            width="30"
-            alt="Copyright. NEOTAPE.LIVE INC. All Rights Reserved."
-          />
-        </div>
-        <div class="main">
+        <div
+          :class="
+            open
+              ? `bottom fade-nav fade-delayBtm fade-in`
+              : 'bottom fade-nav fade-delayBtm'
+          "
+        >
+          <figure>
+            <a href="#" target="_blank">
+                          <img src="../assets/neon-cube.png" alt="Our Latest Number"
+                        />
+            </a>
+          </figure>
           <nav>
             <ul>
               <li>
-                <a
-                  class="fade-nav fade-delay01"
-                  :class="open ? `fade-in` : ''"
-                  href="#"
-                  >时间表</a
-                >
+                <a href="#"
+                  ><img
+                    src="../assets/weibo.svg"
+                    style="width: .4rem;height: .4rem;"
+                    alt="Weibo"
+                /></a>
               </li>
-              <li>
-                <a
-                  class="fade-nav fade-delay02"
-                  :class="open ? `fade-in` : ''"
-                  href="#"
-                  >成员</a
-                >
-              </li>
-              <li>
-                <a
-                  class="fade-nav fade-delay03"
-                  :class="open ? `fade-in` : ''"
-                  href="#"
-                  >合作</a
-                >
-              </li>
+              <li><a href="#">contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div
-        :class="
-          open
-            ? `bottom fade-nav fade-delayBtm fade-in`
-            : 'bottom fade-nav fade-delayBtm'
-        "
-      >
-        <figure>
-          <a href="#" target="_blank">
-            <img src="../assets/hanpi.png" alt="Our Latest Number"
-          /></a>
-        </figure>
-        <nav>
-          <ul>
-            <li>
-              <a href="#"
-                ><img
-                  src="../assets/weibo.svg"
-                  style="width: .4rem;height: .4rem;"
-                  alt="Weibo"
-              /></a>
-            </li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <span @click="toggle" :class="open ? 'open' : ''" id="hamburger"></span>
-    <span class="mask"></span>
-  </header>
+      <span @click="toggle" :class="open ? 'open' : ''" id="hamburger"></span>
+    </header>
+    <span @click="toggle" class="mask"></span>
+  </div>
 </template>
 
 <script lang="ts">
@@ -283,10 +286,6 @@ span.fade {
   animation-delay: 0.9s !important;
 }
 
-article {
-  padding-top: 70px;
-  padding-bottom: 40px;
-}
 
 header#head {
   font-weight: 700;
@@ -381,7 +380,7 @@ header#head .toggle .top .side {
 }
 
 header#head .toggle .bottom {
-  margin: 50px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 header#head .toggle .bottom figure {
@@ -479,7 +478,7 @@ header#head.open + .mask {
 
 @media screen and (min-width: 374px) {
   header#head .toggle .bottom {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 }
 
