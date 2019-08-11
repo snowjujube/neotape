@@ -12,6 +12,8 @@
     "lib-flexible": "^0.3.2",
     "px2rem-loader": "^0.1.9",
     "reset-css": "^4.0.1",
+    "three": "^0.107.0",
+    "three-orbit-controls": "^82.1.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",

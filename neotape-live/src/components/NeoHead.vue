@@ -60,8 +60,7 @@
         >
           <figure>
             <a href="#" target="_blank">
-                          <img src="../assets/neon-cube.png" alt="Our Latest Number"
-                        />
+              <img src="../assets/neon-cube.png" alt="Our Latest Number" />
             </a>
           </figure>
           <nav>
@@ -285,7 +284,6 @@ span.fade {
   -webkit-animation-delay: 0.9s !important;
   animation-delay: 0.9s !important;
 }
-
 
 header#head {
   font-weight: 700;
